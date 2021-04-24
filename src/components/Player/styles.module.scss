@@ -23,7 +23,7 @@
   footer {
     align-self: stretch;
 
-    &.empty {
+    &.empty .progress {
       opacity: 0.5;
     }
   }
@@ -107,6 +107,12 @@
 
     &:disabled {
       cursor: not-allowed;
+      opacity: 0.5;
+      cursor: not-allowed;
+    }
+
+    &.isActive {
+      filter: invert(0.35) sepia(1) saturate(3) hue-rotate(100deg);
     }
 
     &:hover:not(:disabled) {
